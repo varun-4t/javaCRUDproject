@@ -15,7 +15,7 @@ public class createTable {
             return;
         }
 
-        if (Connect.tableExists(tableName)) {
+        if (Connect.tableExists(tableName,createDatabase.database)) {
             System.out.println("Table already exists!");
             return;
         }
